@@ -24,7 +24,7 @@ copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[4]/div/d
 copymail.click()
 #タブを追加してそっちにいく
 browser.execute_script("window.open()")
-browser.switch_to.window(driver.window_handles[1])
+browser.switch_to.window(browser.window_handles[1])
 #twitterに接続
 url_login = 'https://twitter.com/i/flow/signup'
 print(f"Access:{url_login}")
