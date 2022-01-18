@@ -7,32 +7,41 @@ import random
 unicode1=(r'C:\Users\user\OneDrive\デスクトップ\gyazoapi\chromedriver.exe')
 browser = webdriver.Chrome(executable_path = unicode1)
 browser.implicitly_wait(3)
+#vpn
 print('15秒以内にvpnに接続しなさい。')
 time.sleep(15)
+#mail connect
 kukuru="https://m.kuku.lu"
 browser.get(kukuru)
 time.sleep(3)
+#期限付きのメルアドを取得
 kigen = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div[1]/div[5]/a")
 kigen.click()
 time.sleep(1)
+#メルアドをコピー
 copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[4]/div/div/div/div/div[4]/a")
 copymail.click()
+#タブを追加してそっちにいく
 browser.execute_script("window.open()")
 browser.switch_to.window(driver.window_handles[1])
+#twitterに接続
 url_login = 'https://twitter.com/i/flow/signup'
 print(f"Access:{url_login}")
 browser.get(url_login)
-time.sleep(10)
+time.sleep(5)
 print("SuccessfullyAccessed")
 #twuser is twitter user.
+#user名を入力
 tw_user="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input"
 twuser=browser.find_element(by=By.XPATH, value=tw_user)
 twuser.clear()
 random1=(random.randint(1000, 9999))
 USER=(f"Tinker{random1}")
 twuser.send_keys(USER)
+#電話番号→メール
 changemail = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[4]/span")
 changemail.click()
+#メルアド入力
 mail=aaa@aaa.aaa
 mail_input="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[3]/label/div/div[2]/div/input"
 tw_mail = browser.find_element(by=By.XPATH, value=mail_input)
