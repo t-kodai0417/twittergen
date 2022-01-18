@@ -91,6 +91,10 @@ aaaa=dev3.text
 aa22=aaaa.replace('Twitterの認証コードは', '')
 s=aa22.replace('です', '')
 print(s)
+browser.switch_to.window(browser.window_handles[1])
+vericode=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/label/div/div[2]/div/input")
+vericode.clear()
+vericode.send_keys(s)
 #-------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
