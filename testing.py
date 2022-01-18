@@ -18,7 +18,7 @@ time.sleep(3)
 #期限付きのメルアドを取得
 kigen = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div[1]/div[5]/a")
 kigen.click()
-time.sleep(1)
+time.sleep(5)
 #メルアドをコピー
 copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[4]/div/div/div/div/div[4]/a")
 copymail.click()
@@ -70,6 +70,7 @@ time.sleep(1)
 divbutton2 = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div")
 divbutton2.click()
 divbutton3 = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/div")
+time.sleep(1)
 divbutton3.click()
 #--------------------------------
 #devmode
