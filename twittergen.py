@@ -48,9 +48,19 @@ mail_input="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[
 tw_mail = browser.find_element(by=By.XPATH, value=mail_input)
 tw_mail.send_keys(mail)
 #誕生日等を入力
-select_element = browser.find_element(by=By.XPATH, value=mail_input)
+#月
+select_element = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[5]/div[3]/div/div[1]/select")
 select_object = Select(select_element)
 select_object.select_by_index(1)
+#日
+select_element = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[5]/div[3]/div/div[2]/select")
+select_object = Select(select_element)
+select_object.select_by_index(5)
+#年
+select_element = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[5]/div[3]/div/div[3]/select")
+select_object = Select(select_element)
+select_object.select_by_index(25)
+#--------------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
 browser_from = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/form/div[2]/div[2]/button")
