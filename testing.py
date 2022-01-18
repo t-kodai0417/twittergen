@@ -110,7 +110,7 @@ dev5.clear()
 dev5_pass="kodai0417@"
 dev5.send_keys(dev5_pass)
 #dev6--次へ
-dev6=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div")
+dev6=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div[2]/div[2]/div/div")
 dev6.click()
 #dev7--アイコンをbypass
 dev7=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
