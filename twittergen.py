@@ -10,7 +10,7 @@ browser.implicitly_wait(3)
 print('15秒以内にvpnに接続しなさい。')
 time.sleep(15)
 url_login = 'https://twitter.com/i/flow/signup'
-print(f"Access{url_login}")
+print(f"Access:{url_login}")
 browser.get(url_login)
 time.sleep(10)
 print("SuccessfullyAccessed")
@@ -23,6 +23,9 @@ USER=(f"Tinker{random1}")
 twuser.send_keys(USER)
 changemail = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[4]/span")
 changemail.click()
+mail=aaa@aaa.aaa
+mail_input="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[3]/label/div/div[2]/div/input"
+tw_mail = browser.find_element(by=By.XPATH, value=mail_input)
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
 browser_from = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/form/div[2]/div[2]/button")
