@@ -63,6 +63,19 @@ select_element = browser.find_element(by=By.XPATH, value="/html/body/div/div/div
 select_object = Select(select_element)
 select_object.select_by_index(25)
 #--------------------------------
+#devmode
+browser.switch_to.window(browser.window_handles[0])
+#dev1--メールアドレスを選択する
+dev1 = browser.find_element(by=By.XPATH, value=mail_input)
+dev1.click()
+#dev2--受信トレイを開く
+dev2 = browser.find_element(by=By.XPATH, value=mail_input)
+dev2.click()
+#dev3--メールの件名を取得する
+dev3 = browser.find_element_by_class_name("gb_P")
+
+print(dev3.text)
+#-------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
 browser_from = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/form/div[2]/div[2]/button")
