@@ -62,6 +62,9 @@ select_object.select_by_index(5)
 select_element = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[5]/div[3]/div/div[3]/select")
 select_object = Select(select_element)
 select_object.select_by_index(25)
+#clickbutton
+divbutton1 = browser.find_element(by=By.XPATH, value=/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div)
+divbutton1.click()
 #--------------------------------
 #devmode
 browser.switch_to.window(browser.window_handles[0])
@@ -69,7 +72,7 @@ browser.switch_to.window(browser.window_handles[0])
 dev1 = browser.find_element(by=By.XPATH, value=mail_input)
 dev1.click()
 #dev2--受信トレイを開く
-dev2 = browser.find_element(by=By.XPATH, value=mail_input)
+dev2 = browser.find_element(by=By.XPATH, value=/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div)
 dev2.click()
 #dev3--メールの件名を取得する
 dev3 = browser.find_element_by_class_name("gb_P")
