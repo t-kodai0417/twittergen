@@ -87,6 +87,10 @@ time.sleep(3)
 #再読み込み→get
 dev3 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/a/div[1]/b/span")
 print(dev3.text)
+aaaa=dev3.text
+aa22=aaaa.replace('Twitterの認証コードは', '')
+s=aa22.replace('です', '')
+print(s)
 #-------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
