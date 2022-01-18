@@ -26,7 +26,7 @@ twuser.send_keys(USER)
 changemail = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[4]/span")
 changemail.click()
 #メルアド入力
-mail=aaa@aaa.aaa
+mail="aaa@aaa.aaa"
 mail_input="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[3]/label/div/div[2]/div/input"
 tw_mail = browser.find_element(by=By.XPATH, value=mail_input)
 tw_mail.send_keys(mail)
