@@ -23,6 +23,9 @@ time.sleep(3)
 kigen = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div[1]/div[5]/a")
 kigen.click()
 time.sleep(5)
+#メルアドを取得
+getma = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/a/div[1]/b/span")
+print(getma.text)
 #メルアドをコピー
 copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[4]/div/div/div/div/div[4]/a")
 copymail.click()
