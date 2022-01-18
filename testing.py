@@ -115,6 +115,16 @@ dev6.click()
 #dev7--アイコンをbypass
 dev7=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
 dev7.click()
+#dev8--自己紹介をbypass
+dev8=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
+dev8.click()
+#dev9--UserIdをbypass
+dev9=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
+dev9.click()
+#dev10--興味のあることをbypass
+dev10=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div")
+dev10.click()
+
 #-------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
