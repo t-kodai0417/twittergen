@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.support.select import Select
 import time
 import pandas as pd
 from selenium.webdriver.common.by import By
