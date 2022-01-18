@@ -105,7 +105,6 @@ vericode.send_keys(s)
 dev4 = browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div")
 dev4.click()
 #dev5--パスワードを入力
-#
 dev5=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/div/label/div/div[2]/div[1]/input")
 dev5.clear()
 dev5_pass="kodai0417@"
@@ -113,7 +112,9 @@ dev5.send_keys(dev5_pass)
 #dev6--次へ
 dev6=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div")
 dev6.click()
-
+#dev7--アイコンをbypass
+dev7=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
+dev7.click()
 #-------------------------
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
