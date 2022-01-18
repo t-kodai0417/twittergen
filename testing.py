@@ -109,11 +109,11 @@ dev5=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[
 dev5.clear()
 dev5_pass="kodai0417@"
 dev5.send_keys(dev5_pass)
-time.sleep(1)
+time.sleep(2)
 #dev6--次へ
 #class=css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-1tl8opc r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0
 #span=/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div[2]/div[2]/div/div/div/span
-dev6=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[2]/main/div/div/div/div[2]/div[2]/div[2]/div/div/div/span")
+dev6=browser.find_element(by=By.XPATH, value="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/div")
 dev6.click()
 #dev7--アイコンをbypass
 dev7=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[2]/div/div/span/span")
