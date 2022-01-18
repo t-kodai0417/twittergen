@@ -83,7 +83,7 @@ dev2 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[24]/div/di
 dev2.click()
 #dev3--メールの件名を取得する
 browser.refresh()
-time.sleep(1)
+time.sleep(3)
 #再読み込み→get
 dev3 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[6]/div/div[3]/div[1]/div[2]/div[2]/div/div/div[1]/a/div[1]/b/span")
 print(dev3.text)
