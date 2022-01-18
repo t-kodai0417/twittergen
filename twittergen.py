@@ -15,10 +15,12 @@ browser.get(url_login)
 time.sleep(10)
 print("SuccessfullyAccessed")
 #twuser is twitter user.
-usertwxp="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input"
-twuser=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div/form/div/div/div[3]/div/input")
+tw_user="/html/body/div/div/div/div[1]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input"
+twuser=browser.find_element(by=By.XPATH, value=tw_user)
 twuser.clear()
-element.send_keys(password)
+random1=(random.randint(1000, 9999))
+USER=(f"Tinker{random1}")
+twuser.send_keys(USER)
 print('15秒以内にrecaptcha認証を完了させなさい。')
 time.sleep(15)
 browser_from = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/form/div[2]/div[2]/button")
