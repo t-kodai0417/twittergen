@@ -1,0 +1,1 @@
+-TwitterAccountGeneratorの作りかけ。
