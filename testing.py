@@ -87,7 +87,7 @@ browser.switch_to.window(browser.window_handles[0])
 dev1 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[2]/div/div/div[8]/div[4]/div/div[1]/div[2]/div[1]/a")
 dev1.click()
 #dev2--受信トレイを開く
-dev2 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[24]/div/div/div[4]/div[3]/a")
+dev2 = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[25]/div/div/div[4]/div[3]/a")
 dev2.click()
 #dev3--メールの件名を取得する
 browser.refresh()
