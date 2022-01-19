@@ -26,6 +26,7 @@ time.sleep(5)
 #メルアドを取得
 getma = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[5]/div/div/div/div/div[1]/u/b")
 print(getma.text)
+sutema=getma.text
 time.sleep(1)
 #メルアドをコピー
 copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[5]/div/div/div/div/div[4]/a")
@@ -132,4 +133,6 @@ dev9.click()
 browser.get("https://twitter.com")
 #-------------------------
 print('多分完了しました。')
+print(f"メルアド:{sutema}")
+print("パスワード:kodai0417@")
 time.sleep(15)
