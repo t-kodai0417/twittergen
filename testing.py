@@ -28,7 +28,7 @@ getma = browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[5]/div/di
 print(getma.text)
 time.sleep(1)
 #メルアドをコピー
-copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[4]/div/div/div/div/div[4]/a")
+copymail=browser.find_element(by=By.XPATH, value="/html/body/div[1]/div[5]/div/div/div/div/div[4]/a")
 copymail.click()
 #タブを追加してそっちにいく
 browser.execute_script("window.open()")
