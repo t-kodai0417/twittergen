@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 import pyautogui
 import random
 from selenium.webdriver.chrome.options import Options
+import os
 option = Options()
 PROXY = input("HTTPProxyを入力してください:") 
 option.add_argument('--proxy-server=http://%s' % PROXY)
@@ -135,4 +136,10 @@ browser.get("https://twitter.com")
 print('多分完了しました。')
 print(f"メルアド:{sutema}")
 print("パスワード:kodai0417@")
+print(f"{sutema}:kodai0417@")
+writetxt=os.path.abspath("accounttwi.txt")
+f = open(writetxt, 'w', encoding='utf-8')
+f.write(f"\n{sutema}:kodai0417@")
+print(f'txtpath={writetxt}')
+f.close()
 time.sleep(15)
