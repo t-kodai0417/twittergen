@@ -8,14 +8,14 @@ import random
 from selenium.webdriver.chrome.options import Options
 import os
 option = Options()
-PROXY = input("HTTPProxyを入力してください:") 
+PROXY = input("httpsProxyを入力してください:") 
 option.add_argument('--proxy-server=http://%s' % PROXY)
 unicode1=(r'C:\Users\user\OneDrive\デスクトップ\gyazoapi\chromedriver.exe')
 browser = webdriver.Chrome(executable_path = unicode1,chrome_options=option)
 browser.implicitly_wait(3)
 #vpn
-print('15秒以内にvpnに接続しなさい。')
-time.sleep(15)
+print('7秒でスタートします')
+time.sleep(7)
 #mail connect
 kukuru="https://m.kuku.lu"
 browser.get(kukuru)
